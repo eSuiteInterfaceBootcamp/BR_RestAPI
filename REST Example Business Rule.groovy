@@ -36,9 +36,6 @@ if (newTicket.statusCode != 200) {
   	return;
 }
 
-logger.debug(newTicket.json);
-logger.debug(newTicket.json.firstName);
-
 // create a new person record
 Person newPerson = new Person();
 newPerson.firstName = newTicket.json.firstName;
