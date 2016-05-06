@@ -53,7 +53,7 @@ dlNumber.saveOrUpdate();
 
 // create the traffic newTicket case
 Case newCase = new Case();
-newCase.caseNumber = newTicket.json.ticketID;
+newCase.caseNumber = newTicket.json.ticketNumber;
 newCase.caseType = "TRAFFIC";
 newCase.saveOrUpdate();
 
